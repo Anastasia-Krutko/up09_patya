@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omnifood - Здоровое питание с доставкой</title>
+    <meta name="description" content="Умная подписка на еду 365 дней в году. Персонализированные планы питания с доставкой на дом.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- Шапка сайта с навигацией -->
+<header class="site-header">
+    <div class="wrapper">
+        <!-- Чекбокс для управления меню -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        
+        <!-- Оверлей для затемнения -->
+        <div class="nav-overlay"></div>
+        
+        <div class="header-row">
+            <!-- Логотип слева -->
+            <a href="/" class="brand-link" aria-label="На главную">
+                <img src="UP09-master/img/omnifood-logo.webp" alt="Omnifood" class="brand-logo" width="150" height="30">
+            </a>
+            
+            <!-- Бургер-кнопка справа (только на мобильных) -->
+            <label for="nav-toggle" class="hamburger" aria-label="Открыть меню">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </label>
+            
+            <!-- Навигация справа (на десктопе) -->
+            <nav class="primary-nav" aria-label="Основное меню">
+                <ul class="nav-items">
+                    <li><a href="#how-it-works" class="nav-item">Как это работает</a></li>
+                    <li><a href="#meals" class="nav-item">Рецепты</a></li>
+                    <li><a href="#testimonials" class="nav-item">Отзывы</a></li>
+                    <li><a href="#pricing" class="nav-item">Цены</a></li>
+                    <li><a href="#cta" class="nav-item nav-item-highlight">Попробовать</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+    <main>
+        <!-- Hero-section-->
+        <section class="hero-section" aria-labelledby="hero-heading">
+            <div class="wrapper">
+                <div class="hero-layout">
+                    <div class="hero-info">
+                        <h1 id="hero-heading" class="hero-headline">
+                            Здоровая еда доставляется к вашей двери каждый день
+                        </h1>
+                        <p class="hero-subheadline">
+                            Умная подписка на еду 365 дней в году, которая заставит вас снова питаться здорово. 
+                            Подстраивается под ваши вкусы и потребности в питании.
+                        </p>
+                        
+                        <div class="hero-actions">
+                            <a href="#cta" class="button button-primary">Начать правильно питаться</a>
+                            <a href="#how-it-works" class="button button-secondary">Подробнее &darr;</a>
+                        </div>
+                        
+                        <!--доставка-->
+                        <div class="delivery-info">
+                            <div class="customer-photos" aria-label="Наши клиенты">
+                                <img src="UP09-master/img/customers/customer-1.webp" alt="Клиент" class="customer-photo" width="40" height="40">
+                                <img src="UP09-master/img/customers/customer-2.webp" alt="Клиент" class="customer-photo" width="40" height="40">
+                                <img src="UP09-master/img/customers/customer-3.webp" alt="Клиент" class="customer-photo" width="40" height="40">
+                                <img src="UP09-master/img/customers/customer-4.webp" alt="Клиент" class="customer-photo" width="40" height="40">
+                                <img src="UP09-master/img/customers/customer-5.webp" alt="Клиент" class="customer-photo" width="40" height="40">
+                                <img src="UP09-master/img/customers/customer-6.webp" alt="Клиент" class="customer-photo" width="40" height="40">
+                            </div>
+                            <p class="delivery-meta">
+                                <span class="delivery-highlight">250,000+</span> доставок в прошлом году
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <figure class="hero-visual">
+                        <img src="UP09-master/img/hero.webp" alt="Разнообразные полезные блюда" width="500" height="550">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!--Нас упоминают-->
+        <aside class="press-mentions" aria-label="Публикации о нас">
+            <div class="wrapper">
+                <p class="press-heading">НАС УПОМИНАЮТ</p>
+                <ul class="press-logos">
+                    <li><img src="UP09-master/img/logos/techcrunch.webp" alt="TechCrunch" width="150" height="30"></li>
+                    <li><img src="UP09-master/img/logos/business-insider.webp" alt="Business Insider" width="150" height="30"></li>
+                    <li><img src="UP09-master/img/logos/the-new-york-times.webp" alt="The New York Times" width="150" height="30"></li>
+                    <li><img src="UP09-master/img/logos/forbes.webp" alt="Forbes" width="150" height="30"></li>
+                    <li><img src="UP09-master/img/logos/usa-today.webp" alt="USA Today" width="150" height="30"></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!--Как это работает-->
+        <section id="how-it-works" class="process-section" aria-labelledby="process-heading">
+            <div class="wrapper">
+                <header class="section-header">
+                    <p class="section-label">Как это работает</p>
+                    <h2 id="process-heading" class="section-title">
+                        Ваша ежедневная доза здоровья в 3 простых шага
+                    </h2>
+                </header>
+
+                <!--Шаг 1-->
+                <article class="process-step step-one">
+                    <div class="step-content">
+                        <span class="step-counter" aria-hidden="true">01</span>
+                        <h3 class="step-heading">Раскажите, что вам нравится (и что не нравится)</h3>
+                        <p class="step-text">
+                            Больше не тратьте время на размышление о том, что есть!
+                            Omnifood AI создаст для вас на 100% персонализированный 
+                            еженедельный план питания. Он гарантирует, что вы
+                            получите все необходимые питательные вещества и
+                            витамины, независимо от вашей диеты!
+                        </p>
+                    </div>
+                    <figure class="step-visual">
+                        <div class="visual-circle">
+                            <img src="UP09-master/img/app/app-screen-1.webp" alt="Экран приложения - выбор предпочтений" width="200" height="400">
+                        </div>
+                    </figure>
+                </article>
+
+                <!--Шаг 2-->
+                <article class="process-step step-two">
+                    <div class="step-content">
+                        <span class="step-counter" aria-hidden="true">02</span>
+                        <h3 class="step-heading">Утвердите свой еженедельный план питания</h3>
+                        <p class="step-text">
+                            Раз в неделю утверждайте план питания, сгенерированный
+                            для вас Omnifood AI. Вы можете менять ингредиенты,
+                            заменять целые блюда или даже добавлять свои
+                            собственные рецепты.
+                        </p>
+                    </div>
+                    <figure class="step-visual">
+                        <div class="visual-circle">
+                            <img src="UP09-master/img/app/app-screen-2.webp" alt="Экран приложения - утверждение плана" width="200" height="400">
+                        </div>
+                    </figure>
+                </article>
+
+                <!--Шаг 3-->
+                <article class="process-step step-three">
+                    <div class="step-content">
+                        <span class="step-counter" aria-hidden="true">03</span>
+                        <h3 class="step-heading">Получайте еду в удобное время</h3>
+                        <p class="step-text">
+                            Лучшие повара города будут готовить выбранное вами
+                            блюдо каждый день, и мы доставим его к вашей двери в
+                            удобное для вас время. Вы можете ежедневно менять
+                            график и адрес доставки!
+                        </p>
+                    </div>
+                    <figure class="step-visual">
+                        <div class="visual-circle">
+                            <img src="UP09-master/img/app/app-screen-3.webp" alt="Экран приложения - доставка" width="200" height="400">
+                        </div>
+                    </figure>
+                </article>
+            </div>
+        </section>
+
+        <!--Прием пищи-->
+        <section id="meals" class="meals-section" aria-labelledby="meals-heading">
+            <div class="wrapper">
+                <header class="section-header">
+                    <p class="section-label">Прием пищи</p>
+                    <h2 id="meals-heading" class="section-title">
+                        Система Omnifood AI выбирает из более 5000 рецептов
+                    </h2>
+                </header>
+
+                <div class="meals-grid">
+                    <!--Японские Гёдза-->
+                    <article class="meal-item">
+                        <img src="UP09-master/img/meals/meal-1.webp" alt="Японские Гёдза" class="meal-image" width="300" height="200">
+                        <div class="meal-details">
+                            <span class="badge badge-vegetarian">Вегетарианское</span>
+                            <h3 class="meal-name">Японские Гёдза</h3>
+                            <ul class="meal-metrics">
+                                <li>
+                                    <img src="UP09-master/Img%20-%20flame%20outline.webp" alt="" class="metric-icon" width="20" height="20">
+                                    <span>650 калорий</span>
+                                </li>
+                                <li>
+                                    <img src="UP09-master//Img%20-%20restaurant%20outline.webp" alt="" class="metric-icon" width="20" height="20">
+                                    <span>NutriScore ® 74</span>
+                                </li>
+                                <li>
+                                    <img src="UP09-master/Img%20-%20star%20outline.webp" alt="" class="metric-icon" width="20" height="20">
+                                    <span>4.9 рейтинг (537)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!--Салат с авокадо-->
+                    <article class="meal-item">
+                        <img src="UP09-master/img/meals/meal-2.webp" alt="Салат с авокадо" class="meal-image" width="300" height="200">
+                        <div class="meal-details">
+                            <div class="badge-group">
+                                <span class="badge badge-vegan">Веганское</span>
+                                <span class="badge badge-paleo">Палео</span>
+                            </div>
+                            <h3 class="meal-name">Салат с авокадо</h3>
+                            <ul class="meal-metrics">
+                                <li>
+                                    <img src="UP09-master/Img%20-%20flame%20outline.webp" alt="" class="metric-icon" width="20" height="20">
+                                    <span>400 калорий</span>
+                                </li>
+                                <li>
+                                    <img src="UP09-master//Img%20-%20restaurant%20outline.webp" alt="" class="metric-icon" width="20" height="20">
+                                    <span>NutriScore ® 92</span>
+                                </li>
+                                <li>
+                                    <img src="UP09-master/Img%20-%20star%20outline.webp" alt="" class="metric-icon" width="20" height="20">
+                                    <span>4.8 рейтинг (441)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!--Боул-->
+                    <article class="meal-item">
+                        <img src="UP09-master/img/gallery/gallery-6.webp" alt="Боул с киноа" class="meal-image" width="300" height="200">
+                        <div class="meal-details">
+                            <div class="badge-group">
+                                <span class="badge badge-nutritious">Питательное</span>
+                                <span class="badge badge-fast">Быстро</span>
+                            </div>
+                            <h3 class="meal-name">Боул</h3>
+                            <ul class="meal-metrics">
+                                <li>
+                                    <img src="UP09-master/Img%20-%20flame%20outline.webp" alt="" class="metric-icon" width="20" height="20">
+                                    <span>1100 калорий</span>
+                                </li>
+                                <li>
+                                    <img src="UP09-master//Img%20-%20restaurant%20outline.webp" alt="" class="metric-icon" width="20" height="20">
+                                    <span>NutriScore ® 95</span>
+                                </li>
+                                <li>
+                                    <img src="UP09-master/Img%20-%20star%20outline.webp" alt="" class="metric-icon" width="20" height="20">
+                                    <span>4.9 рейтинг (729)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!--Диеты-->
+                    <aside class="diet-options" aria-label="Диетические опции">
+                        <h3 class="diet-heading">Подходит для любой диеты</h3>
+                        <ul class="diet-list">
+                            <li><img src="UP09-master/Img%20-%20checkmark%20outline.webp" alt="" class="check-icon" width="20" height="20"> Вегетарианская</li>
+                            <li><img src="UP09-master/Img%20-%20checkmark%20outline.webp" alt="" class="check-icon" width="20" height="20"> Веганская</li>
+                            <li><img src="UP09-master/Img%20-%20checkmark%20outline.webp" alt="" class="check-icon" width="20" height="20"> Пескетарианская</li>
+                            <li><img src="UP09-master/Img%20-%20checkmark%20outline.webp" alt="" class="check-icon" width="20" height="20"> Без глютена</li>
+                            <li><img src="UP09-master/Img%20-%20checkmark%20outline.webp" alt="" class="check-icon" width="20" height="20"> Без лактозы</li>
+                            <li><img src="UP09-master/Img%20-%20checkmark%20outline.webp" alt="" class="check-icon" width="20" height="20"> Кето</li>
+                            <li><img src="UP09-master/Img%20-%20checkmark%20outline.webp" alt="" class="check-icon" width="20" height="20"> Палео</li>
+                            <li><img src="UP09-master/Img%20-%20checkmark%20outline.webp" alt="" class="check-icon" width="20" height="20"> Низкий FODMAP</li>
+                            <li><img src="UP09-master/Img%20-%20checkmark%20outline.webp" alt="" class="check-icon" width="20" height="20"> Для детей</li>
+                        </ul>
+                    </aside>
+                </div>
+                
+                <footer class="meals-footer">
+                    <a href="#" class="view-all">Посмотреть все рецепты →</a>
+                </footer>
+            </div>
+        </section>
+
+        <!-- Отзывы и галерея-->
+        <section id="testimonials" class="testimonials-section" aria-labelledby="testimonials-heading">
+            <div class="testimonials-container">
+                <div class="testimonials-content">
+                    <header class="section-header">
+                        <p class="section-label">Отзывы</p>
+                        <h2 id="testimonials-heading" class="section-title">
+                            Попробовав однажды, вы уже не сможете вернуться к прежнему
+                        </h2>
+                    </header>
+
+                    <div class="testimonials-grid">
+                        <figure class="testimonial-card">
+                            <img src="UP09-master/img/customers/dave.webp" alt="Дэйв Брайсон" class="testimonial-photo" width="60" height="60">
+                            <blockquote class="testimonial-quote">
+                                <p>Недорогие, полезные и очень вкусные блюда, даже без необходимости заказывать вручную! Это просто волшебно!</p>
+                            </blockquote>
+                            <figcaption class="testimonial-author">— Dave Bryson</figcaption>
+                        </figure>
+
+                        <figure class="testimonial-card">
+                            <img src="UP09-master/img/customers/ben.webp" alt="Бен Хэдли" class="testimonial-photo" width="60" height="60">
+                            <blockquote class="testimonial-quote">
+                                <p>Алгоритм искусственного интеллекта просто потрясающий, он каждый раз выбирает для меня правильные блюда. Удивительно, что больше не нужно беспокоиться о еде!</p>
+                            </blockquote>
+                            <figcaption class="testimonial-author">— Ben Hadley</figcaption>
+                        </figure>
+
+                        <figure class="testimonial-card">
+                            <img src="UP09-master/img/customers/steve.webp" alt="Стив Миллер" class="testimonial-photo" width="60" height="60">
+                            <blockquote class="testimonial-quote">
+                                <p>Omnifood — просто спасение! Я только что открыла компанию, поэтому у меня совсем нет времени на готовку. Теперь я не могу жить без ежедневного питания!</p>
+                            </blockquote>
+                            <figcaption class="testimonial-author">— Steve Miller</figcaption>
+                        </figure>
+
+                        <figure class="testimonial-card">
+                            <img src="UP09-master/img/customers/hannah.webp" alt="Ханна Смит" class="testimonial-photo" width="60" height="60">
+                            <blockquote class="testimonial-quote">
+                                <p>Я купила продукты Omnifood для всей семьи, и это сэкономило мне столько времени! К тому же, все продукты органические, веганские и без пластика.</p>
+                            </blockquote>
+                            <figcaption class="testimonial-author">— Hannah Smith</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+                <!--Галерея изображений еды-->
+                <aside class="food-gallery" aria-label="Фотографии блюд">
+                    <figure class="gallery-image">
+                        <img src="UP09-master/img/gallery/gallery-1.webp" alt="Тарелка с пастой" loading="lazy" width="200" height="200">
+                    </figure>
+                    <figure class="gallery-image">
+                        <img src="UP09-master/img/gallery/gallery-2.webp" alt="Салат с авокадо" loading="lazy" width="200" height="200">
+                    </figure>
+                    <figure class="gallery-image">
+                        <img src="UP09-master/img/gallery/gallery-3.webp" alt="Роллы" loading="lazy" width="200" height="200">
+                    </figure>
+                    <figure class="gallery-image">
+                        <img src="UP09-master/img/gallery/gallery-4.webp" alt="Боул с лососем" loading="lazy" width="200" height="200">
+                    </figure>
+                    <figure class="gallery-image">
+                        <img src="UP09-master/img/gallery/gallery-5.webp" alt="Десерт" loading="lazy" width="200" height="200">
+                    </figure>
+                    <figure class="gallery-image">
+                        <img src="UP09-master/img/gallery/gallery-6.webp" alt="Боул с киноа" loading="lazy" width="200" height="200">
+                    </figure>
+                    <figure class="gallery-image">
+                        <img src="UP09-master/img/gallery/gallery-7.webp" alt="Бургер" loading="lazy" width="200" height="200">
+                    </figure>
+                    <figure class="gallery-image">
+                        <img src="UP09-master/img/gallery/gallery-8.webp" alt="Завтрак" loading="lazy" width="200" height="200">
+                    </figure>
+                    <figure class="gallery-image">
+                        <img src="UP09-master/img/gallery/gallery-9.webp" alt="Сэндвич" loading="lazy" width="200" height="200">
+                    </figure>
+                    <figure class="gallery-image">
+                        <img src="UP09-master/img/gallery/gallery-10.webp" alt="Смузи" loading="lazy" width="200" height="200">
+                    </figure>
+                    <figure class="gallery-image">
+                        <img src="UP09-master/img/gallery/gallery-11.webp" alt="Суши" loading="lazy" width="200" height="200">
+                    </figure>
+                    <figure class="gallery-image">
+                        <img src="UP09-master/img/gallery/gallery-12.webp" alt="Пицца" loading="lazy" width="200" height="200">
+                    </figure>
+                </aside>
+            </div>
+        </section>
+
+        <!--Цены-->
+        <section id="pricing" class="pricing-section" aria-labelledby="pricing-heading">
+            <div class="wrapper">
+                <header class="section-header">
+                    <p class="section-label">Цены</p>
+                    <h2 id="pricing-heading" class="section-title">
+                        Питаться хорошо, не разоряясь
+                    </h2>
+                </header>
+
+                <div class="pricing-grid">
+                    <!--Starter-->
+                    <article class="pricing-card pricing-card-basic">
+                        <header class="card-header">
+                            <p class="plan-name">STARTER</p>
+                            <p class="plan-price"><span class="currency">₽</span>3990</p>
+                            <p class="plan-period">в месяц. Это всего 130 рублей за один прием пищи!</p>
+                        </header>
+                        <ul class="plan-features">
+                            <li><img src="UP09-master/Img%20-%20checkmark%20outline.webp" alt="" class="feature-icon" width="20" height="20"> 1 прием пищи в день</li>
+                            <li><img src="UP09-master/Img%20-%20checkmark%20outline.webp" alt="" class="feature-icon" width="20" height="20"> Заказы принимаются с 11:00 до 21:00</li>
+                            <li><img src="UP09-master/Img%20-%20checkmark%20outline.webp" alt="" class="feature-icon" width="20" height="20"> Доставка бесплатная</li>
+                            <li class="feature-disabled"><img src="UP09-master/Img%20-%20close%20outline.webp" alt="" class="feature-icon" width="20" height="20"></li>
+                        </ul>
+                        <footer class="card-footer">
+                            <a href="#cta" class="button button-primary">Начните правильно питаться</a>
+                        </footer>
+                    </article>
+
+                    <!--Complete-->
+                    <article class="pricing-card pricing-card-premium">
+                        <header class="card-header">
+                            <p class="plan-name">COMPLETE</p>
+                            <p class="plan-price"><span class="currency">₽</span>6490</p>
+                            <p class="plan-period">в месяц. Это всего 108 рублей за один прием пищи!</p>
+                        </header>
+                        <ul class="plan-features">
+                            <li><img src="UP09-master/Img%20-%20checkmark%20outline.webp" alt="" class="feature-icon" width="20" height="20"> 2 приема пищи в день</li>
+                            <li><img src="UP09-master/Img%20-%20checkmark%20outline.webp" alt="" class="feature-icon" width="20" height="20"> Заказ 24/7</li>
+                            <li><img src="UP09-master/Img%20-%20checkmark%20outline.webp" alt="" class="feature-icon" width="20" height="20"> Доставка бесплатная</li>
+                            <li><img src="UP09-master/Img%20-%20checkmark%20outline.webp" alt="" class="feature-icon" width="20" height="20"> Получите доступ к новейшем рецептам</li>
+                        </ul>
+                        <footer class="card-footer">
+                            <a href="#cta" class="button button-primary">Начните правильно питаться</a>
+                        </footer>
+                    </article>
+                </div>
+
+                <p class="pricing-disclaimer">Цены включают все применимые налоги. Вы можете отменить подписку в любое время. Оба тарифных плана включают следующее:</p>
+
+                <!--Преимущества тарифов-->
+                <div class="benefits-grid">
+                    <article class="benefit-item">
+                        <img src="UP09-master/Img%20-%20infinite%20outline.webp" alt="" class="benefit-icon" width="40" height="40">
+                        <h3 class="benefit-title">Больше никогда не готовить!</h3>
+                        <p class="benefit-description">Наша подписка действует 365 дней в году, включая даже основные праздники.</p>
+                    </article>
+
+                    <article class="benefit-item">
+                        <img src="UP09-master/Img%20-%20nutrition%20outline.webp" alt="" class="benefit-icon" width="40" height="40">
+                        <h3 class="benefit-title">Местные и органические продукты</h3>
+                        <p class="benefit-description">Наши повара используют для приготовления ваших блюд только местные, свежие и органические продукты.</p>
+                    </article>
+
+                    <article class="benefit-item">
+                        <img src="UP09-master/Img%20-%20leaf%20outline.webp" alt="" class="benefit-icon" width="40" height="40">
+                        <h3 class="benefit-title">Без отходов</h3>
+                        <p class="benefit-description">Все наши партнеры используют только многоразовые контейнеры для упаковки ваших блюд.</p>
+                    </article>
+
+                    <article class="benefit-item">
+                        <img src="UP09-master/Img%20-%20pause%20outline.webp" alt="" class="benefit-icon" width="40" height="40">
+                        <h3 class="benefit-title">Пауза в любое время</h3>
+                        <p class="benefit-description">Собираетесь в отпуск? Просто приостановите подписку, и мы вернем вам деньги за неиспользованные дни.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!--CTA-->
+        <section id="cta" class="cta-section" aria-labelledby="cta-heading">
+            <div class="wrapper">
+                <div class="cta-layout">
+                    <div class="cta-info">
+                        <h2 id="cta-heading" class="cta-headline">Получите первый обед бесплатно!</h2>
+                        <p class="cta-description">
+                            Здоровые, вкусные и простые в приготовлении блюда ждут вас.
+                            Начните питаться правильно уже сегодня. Вы можете отменить или
+                            приостановить подписку в любое время. А первый обед за наш счет!
+                        </p>
+
+                        <!--Форма подписки-->
+                        <form class="cta-form" action="#" method="post">
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="name">Ваше имя</label>
+                                    <input type="text" id="name" name="name" placeholder="Анастасия Крутько" required>
+                                </div>
+                                <div class="form-field">
+                                    <label for="email">Ваша почта</label>
+                                    <input type="email" id="email" name="email" placeholder="anastasia@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <label for="referral">Откуда вы получили от нас информацию?</label>
+                                    <select id="referral" name="referral">
+                                        <option value="" disabled selected>Выберите вариант</option>
+                                        <option value="social">Социальные сети</option>
+                                        <option value="friends">От друзей</option>
+                                        <option value="ad">Реклама</option>
+                                        <option value="other">Другое</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="button button-submit">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <figure class="cta-visual">
+                        <img src="UP09-master/img/eating.webp" alt="Женщина наслаждается здоровой едой" width="400" height="450" loading="lazy">
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="site-footer">
+        <div class="wrapper">
+            <div class="footer-layout">
+                <!--Блок с логотипом и соцсетями-->
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo-link" aria-label="На главную">
+                        <img src="UP09-master/img/Link.webp" alt="Omnifood" width="140" height="30">
+                    </a>
+                    <ul class="social-list" aria-label="Социальные сети">
+                        <li><a href="#" aria-label="Instagram"><img src="UP09-master/Item%201.webp" alt="" width="20" height="20"></a></li>
+                        <li><a href="#" aria-label="Facebook"><img src="UP09-master/Item%202.webp" alt="" width="20" height="20"></a></li>
+                        <li><a href="#" aria-label="Twitter"><img src="UP09-master/Item%203.webp" alt="" width="20" height="20"></a></li>
+                    </ul>
+                    <p class="copyright-text">
+                        Авторские права © 2027 ООО "Омнифуд".<br> Все права защищены.
+                    </p>
+                </div>
+
+                <!-- Контакты -->
+                <div class="footer-contact">
+                    <h3 class="footer-title">Связаться с нами</h3>
+                    <address class="contact-details">
+                        <p>ул. Примерная, д. 123, 2 этаж,<br> Москва, 123456</p>
+                        <p>
+                            <a href="tel:+74951234567">+7 (495) 123-45-67</a><br>
+                            <a href="mailto:hello@omnifood.com">hello@omnifood.com</a>
+                        </p>
+                    </address>
+                </div>
+
+                <!-- Аккаунт -->
+                <div class="footer-links">
+                    <h3 class="footer-title">Аккаунт</h3>
+                    <ul>
+                        <li><a href="#">Создать аккаунт</a></li>
+                        <li><a href="#">Войти</a></li>
+                        <li><a href="#">Приложение iOS</a></li>
+                        <li><a href="#">Приложение Android</a></li>
+                    </ul>
+                </div>
+
+                <!-- Компания -->
+                <div class="footer-links">
+                    <h3 class="footer-title">Компания</h3>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Для бизнеса</a></li>
+                        <li><a href="#">Наши поставщики</a></li>
+                        <li><a href="#">Карьера</a></li>
+                    </ul>
+                </div>
+
+                <!-- Ресурсы -->
+                <div class="footer-links">
+                    <h3 class="footer-title">Ресурсы</h3>
+                    <ul>
+                        <li><a href="#">Сборка рецептов</a></li>
+                        <li><a href="#">Служба поддержки</a></li>
+                        <li><a href="#">Политика конфиденциальности и условия использования</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
